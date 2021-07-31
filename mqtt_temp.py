@@ -38,11 +38,9 @@ def mainprocess():
     print("in Main Loop")
 
     client.publish("cpu/temp",checktemp()) 
+    time.sleep(10)
     client.loop_stop()    #Stop loop 
     client.disconnect() # disconnect
 if __name__ == "__main__":
-    
-    while True:
-
-        mainprocess()
-        time.sleep(5)
+    mainprocess()
+   
