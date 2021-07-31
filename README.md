@@ -10,6 +10,9 @@ b2:
 
 b3: sửa file 
 điền địa chỉ MQTT và username, password trong file vừa tải 
+'''
+sudo nano mqtt_temp.py
+'''
 
     broker="192.168.1.63"
 
@@ -40,7 +43,7 @@ User=hung # thay bang user của ban
 WorkingDirectory=/home/hung
 ExecStart=/bin/bash -c 'cd /home/hung && python3 mqtt_temp.py'
 Restart=always
-
+RestartSec=10
 [Install]
 WantedBy=multi-user.target
 ```
@@ -53,11 +56,11 @@ sudo systemctl start cpu-temp.service
 ```
  kiểm tra file chạy ok chưa bằng lệnh
 ```
-systemctl status cpu-temp.service
+sudo systemctl status cpu-temp.service
 ```
  enable service bằng lệnh
  ```
-systemctl enable  cpu-temp.service
+sudo systemctl enable  cpu-temp.service
 ```
  
  
