@@ -6,5 +6,6 @@ Mình xin hướng dẫn các bạn cách đưa nhiệt độ cpu của NUC lên
 b1: các bạn cài thư viện 
 pip3 install paho-mqtt
 b2: 
+git cloent 
 
 
