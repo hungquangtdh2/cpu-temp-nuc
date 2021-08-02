@@ -4,15 +4,18 @@ xin chào các bạn
 Mình xin hướng dẫn các bạn cách đưa nhiệt độ cpu của NUC lên hassio 
 
 b1: các bạn cài thư viện 
-pip3 install paho-mqtt
+>pip3 install paho-mqtt
+
 b2: 
 >git clone https://github.com/hungquangtdh2/cpu-temp-nuc.git
 
+>sudo apt-get install lm-sensors
+
 b3: sửa file 
 điền địa chỉ MQTT và username, password trong file vừa tải 
-'''
-sudo nano mqtt_temp.py
-'''
+
+>sudo nano mqtt_temp.py
+
 
     broker="192.168.1.63"
 
