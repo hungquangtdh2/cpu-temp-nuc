@@ -26,6 +26,7 @@ b4: tạo sensor trên hassio
   - platform: mqtt
     name: CPU Temperature
     state_topic: "cpu/temp"
+    unit_of_measurement: "°C"
 ```
 b5: chạy thử file 
 ```
